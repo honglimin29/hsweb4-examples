@@ -3,6 +3,7 @@ package org.hswebframework.example.crud;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
+import org.hswebframework.web.authorization.basic.configuration.EnableAopAuthorize;
 import org.hswebframework.web.crud.annotation.EnableEasyormRepository;
 import org.hswebframework.web.crud.web.ResponseMessage;
 import org.reactivestreams.Publisher;

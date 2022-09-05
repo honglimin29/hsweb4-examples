@@ -32,6 +32,10 @@ public class TestEntity extends GenericEntity<String> {
     @Schema(description = "名称")
     private String name;
 
+    @Column
+    @Schema(description = "年龄")
+    private Integer age;
+
     //枚举
     @Column(length = 32)
     @EnumCodec

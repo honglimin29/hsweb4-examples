@@ -1,14 +1,16 @@
+server:
+  port: 8080
 spring:
   r2dbc:
-    #    url: r2dbc:postgresql://localhost:5432/jetlinks #postgresql请使用此配置
-    #url: r2dbc:mysql://localhost:3306/jetlinks # mysql请使用此配置
-    url: r2dbc:h2:file:///./data/h2db/jetlinks
-    username: sa
-    password:
+    url: r2dbc:postgresql://localhost:5432/test #postgresql请使用此配置
+#    url: r2dbc:mysql://localhost:3306/jetlinks # mysql请使用此配置
+#    url: r2dbc:h2:file:///./data/h2db/jetlinks
+    username: postgres
+    password: postgres
 easyorm:
   auto-ddl: true
-  default-schema: PUBLIC  # 默认使用的schema. mysql时则为数据库名
-  dialect: h2 # 方言: h2,mysql,postgresql
+  default-schema: public  # 默认使用的schema. mysql时则为数据库名
+  dialect: postgres # 方言: h2,mysql,postgresql
 logging:
   level:
     org.hswebframework: debug
